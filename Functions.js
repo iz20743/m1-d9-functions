@@ -83,7 +83,7 @@ function strivify(string){
         return string;
     }
     else{
-        return (word + string);
+        return (string + word);
     }
 
 }
@@ -96,8 +96,14 @@ console.log(strivify("strive"))
  HINT: Modulus Operator
 */
 
-/* WRITE YOUR ANSWER HERE */
-
+function check3and7(n){
+    if(n >=0 && n % 3 == 0 || n % 7 == 0 ){
+return true;
+}
+else{
+    return false;
+}
+}
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
@@ -115,17 +121,7 @@ console.log(reverseString("hello world how is it going"))
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR ANSWER HERE */
-function upperFirst(str){
-    let splitstr = str.split('');
-    for (let i = 0; i < splitstr.length; i++) {
-        splitstr[i] = splitstr[i].charAt(0).toUpperCase() + splitstr[i].bstring(1);
-    }splitstr
 
-    return splitstr.join('');
-}
-
-console.log.apply(upperFirst("hello world how is it going"))
 
 
 /* EXERCISE 9
